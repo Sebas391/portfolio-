@@ -19,6 +19,7 @@ sr.reveal('section', {
 let btn = document.querySelector("#btn");
 let modal = document.querySelector(".modal");
 let cardForm = document.querySelector(".card-modal");
+let btnSend = document.querySelector(".btn-send");
   btn.addEventListener("click",(e)=>{
     e.preventDefault();
     modal.classList.add("modal-active");
@@ -28,4 +29,8 @@ let cardForm = document.querySelector(".card-modal");
       e.stopPropagation();
     })
     modal.classList.remove("modal-active");
+  });
+  
+  btnSend.addEventListener("click",(e)=>{
+    e.preventDefault();
   });
