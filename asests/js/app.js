@@ -16,7 +16,7 @@ sr.reveal('section', {
   interval: 16, 
   reset: true
 });
-let btn = document.querySelector("#btn");
+let btn = document.querySelector("#btn-contac");
 let modal = document.querySelector(".modal");
 let cardForm = document.querySelector(".card-modal");
 let btnSend = document.querySelector(".btn-send");
