@@ -30,7 +30,12 @@ let btnSend = document.querySelector(".btn-send");
     })
     modal.classList.remove("modal-active");
   });
-  
   btnSend.addEventListener("click",(e)=>{
     e.preventDefault();
   });
+  let link = document.querySelectorAll(".link");
+  for (links of link){
+    links.addEventListener("click",()=>{
+      menu.classList.remove("menu-active");
+    });
+  };
