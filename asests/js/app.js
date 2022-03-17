@@ -16,3 +16,16 @@ sr.reveal('section', {
   interval: 16, 
   reset: true
 });
+let btn = document.querySelector("#btn");
+let modal = document.querySelector(".modal");
+let cardForm = document.querySelector(".card-modal");
+  btn.addEventListener("click",(e)=>{
+    e.preventDefault();
+    modal.classList.add("modal-active");
+  });
+  modal.addEventListener("click",()=>{
+    cardForm.addEventListener("click",(e)=>{
+      e.stopPropagation();
+    })
+    modal.classList.remove("modal-active");
+  });

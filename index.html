@@ -13,6 +13,31 @@
   <link rel="stylesheet" href="/asests/css/style.css">
 </head>
 <body>
+  <div class="modal">
+    <div class="card-modal">
+      <div class="title-form">
+        <h2>Contáctame</h2>
+      </div>
+      <div class="card-form">
+        <form action="#" method="post">
+           <div class="item-input">
+             <input type="text" id="name" name="name" class="input" placeholder="ingresa tu nombre">
+            </div>
+           <div class="item-input">
+             <input type="email" id="email" name="email" class="input" placeholder="ingresa tu correo electrónico">
+           </div>
+           <div class="item-input">
+             <textarea id="asunto" name="asunto"  class="item-asunto" placeholder="ingresa tu asunto"></textarea>
+           </div>
+           <div class="btn-send">
+             <button type="submit" class="btn">
+                Enviar
+             </button>
+           </div>
+        </form>
+      </div>
+    </div> 
+  </div>
   <header class="header">
     <div class="navbar mx-container">
       <div class="logo">
@@ -36,7 +61,7 @@
         <h1>Hola mi nombre es </h1>
         <h2>SEBASTIÁN</h2>
         <p>Desarollador web frontend...</p>
-        <a href="#" class="btn">Contactame</a>
+        <a href="#" class="btn" id="btn">Contactame</a>
       </div>
       <div class="social-media">
         <a href ="https://www.facebook.com/profile.php?id=100076953284561"> 
