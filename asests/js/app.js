@@ -19,9 +19,7 @@ sr.reveal('section', {
 let btn = document.querySelector("#btn-contac");
 let modal = document.querySelector(".modal");
 let cardForm = document.querySelector(".card-modal");
-let btnSend = document.querySelector(".btn-send");
-  btn.addEventListener("click",(e)=>{
-    e.preventDefault();
+  btn.addEventListener("click",()=>{
     modal.classList.add("modal-active");
   });
   modal.addEventListener("click",()=>{
@@ -29,9 +27,6 @@ let btnSend = document.querySelector(".btn-send");
       e.stopPropagation();
     })
     modal.classList.remove("modal-active");
-  });
-  btnSend.addEventListener("click",(e)=>{
-    e.preventDefault();
   });
   let link = document.querySelectorAll(".link");
   for (links of link){
