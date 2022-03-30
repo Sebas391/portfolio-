@@ -1,7 +1,7 @@
 let btnForm = document.getElementById("btn-form");
 let name = document.getElementById("name");
 let email = document.getElementById("email");
-let asunto = document.getElementById("asunto");
+let asunto = document.getElementById("message");
 let error = document.getElementById("error");
 btnForm.addEventListener("click",(e)=>{
   e.preventDefault();
